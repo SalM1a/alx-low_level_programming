@@ -13,5 +13,5 @@ if (str == NULL)
 return (NULL);
 strcpy(s1, str);
 return (s1);
-free(s1);
+s1 = NULL;
 }
