@@ -28,4 +28,5 @@ strcpy(ptr, s1);
 strcat(ptr, s2);
 }
 return (ptr);
+return (NULL);
 }
