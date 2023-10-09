@@ -12,8 +12,10 @@ char *str_concat(char *s1, char *s2)
 char *ptr;
 size_t len1, len2, i;
 if (s1 == NULL || s2 == NULL)
-return (NULL);
-
+{
+s1 = "";
+s2 = "";
+}
 len1 = strlen(s1);
 len2 = strlen(s2);
 
@@ -28,5 +30,4 @@ strcpy(ptr, s1);
 strcat(ptr, s2);
 }
 return (ptr);
-return (NULL);
 }
