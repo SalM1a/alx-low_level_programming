@@ -24,11 +24,11 @@ else
 {
 printf("%s", str);
 }
-if (i > 0 && separator != NULL)
+if (i < n - 1 && separator != NULL)
 {
 printf("%s", separator);
 }
 va_end(y);
-}
 printf("\n");
+}
 }
