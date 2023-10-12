@@ -28,7 +28,7 @@ if (i < n - 1 && separator != NULL)
 {
 printf("%s", separator);
 }
-va_end(y);
 }
+va_end(y);
 printf("\n");
 }
