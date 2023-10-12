@@ -16,10 +16,6 @@ va_start(y, n);
 for (i = 0; i < n; i++)
 {
 str = va_arg(y, const char*);
-if (i > n - 1 && separator != NULL)
-{
-printf("%s", separator);
-}
 if (str == NULL)
 {
 printf("(nill)");
@@ -27,6 +23,10 @@ printf("(nill)");
 else
 {
 printf("%s", str);
+}
+if (i > n - 1 && separator != NULL)
+{
+printf("%s", separator);
 }
 va_end(y);
 }
