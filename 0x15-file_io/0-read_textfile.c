@@ -18,13 +18,14 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-buff =malloc(sizeof(char) * letters);
+buff = malloc(sizeof(char) * letters);
+
 read_bytes = read(fd, buff, letters);
 write_bytes = write(STDOUT_FILENO, buff, read_bytes);
 if (read_bytes != write_bytes)
 return (0);
+
 free(buff);
 close(fd);
 return (read_bytes);
 }
-
