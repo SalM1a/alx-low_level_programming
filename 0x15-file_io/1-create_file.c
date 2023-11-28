@@ -11,7 +11,7 @@ while (str[i] != '\0')
 {
 i++;
 }
-return(str[i]);
+return (i);
 }
 /**
  * create_file -  a function that creates a file
