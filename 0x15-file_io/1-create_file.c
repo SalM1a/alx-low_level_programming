@@ -28,8 +28,6 @@ ssize_t sz = 0;
 if (filename == NULL)
 return (-1);
 
-if (text_content == NULL)
-text_content = " ";
 fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
 if (fd == -1)
 return (-1);
