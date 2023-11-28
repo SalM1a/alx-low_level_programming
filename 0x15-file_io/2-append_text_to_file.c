@@ -1,5 +1,4 @@
 #include "main.h"
-#include "main.h"
 /**
  * _strlen -  a function that return the length of string
  * @str: string whose length to be printed
@@ -31,7 +30,7 @@ if (text_content == NULL)
 
 fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
-exit (1);
+exit(1);
 if (text_content != NULL)
 {
 len = _strlen(text_content);
