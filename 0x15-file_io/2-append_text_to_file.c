@@ -29,7 +29,7 @@ return (-1);
 
 fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
-exit(1);
+return (-1);
 
 if (text_content != NULL)
 {
@@ -37,7 +37,7 @@ len = _strlen(text_content);
 size = write(fd, text_content, len);
 if (size == -1)
 {
-exit(1);
+return (-1);
 }
 }
 close(fd);
